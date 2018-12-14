@@ -1,13 +1,13 @@
 {
-	"name": "alfred-npms",
-	"version": "2.0.0",
-	"description": "Alfred 3 workflow to search for npm packages with npms.io",
+	"name": "alfred-npmjs",
+	"version": "2.1.0",
+	"description": "Alfred 3 workflow to search for npm packages",
 	"license": "MIT",
-	"repository": "sindresorhus/alfred-npms",
+	"repository": "fharper/alfred-npmjs",
 	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"name": "Frédéric Harper",
+		"email": "fharper@oocz.net",
+		"url": "https://outofcomfortzone.net"
 	},
 	"engines": {
 		"node": ">=8"
@@ -25,12 +25,10 @@
 	],
 	"keywords": [
 		"npm",
-		"npms",
 		"npmjs",
 		"alfred",
 		"alfred-workflow",
-		"workflow",
-		"alfy"
+		"workflow"
 	],
 	"dependencies": {
 		"alfy": "^0.8.0",

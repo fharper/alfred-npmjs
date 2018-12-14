@@ -6,14 +6,14 @@ const cmdSubtitle = require('./source/cmd-subtitle');
 const q = /boost-exact:[^\s]+/.test(alfy.input) ? alfy.input : `${alfy.input} boost-exact:false`;
 
 (async () => {
-	const data = await alfy.fetch('https://api.npms.io/v2/search', {
+	const data = await alfy.fetch('https://registry.npmjs.org/-/v1/search', {
 		query: {
-			q,
+			'text':q,
 			size: 20
 		}
 	});
 
-	const items = data.results
+	const items = data.objects
 		.filter(result => result.package.name.length > 1)
 		.map(result => {
 			const pkg = result.package;
