@@ -4,7 +4,7 @@
 
 
 
-<img src="media/screenshot.png" width="694" height="440">
+<img src="media/screenshotnpmjs.png" width="694" height="440">
 
 
 ## Install
